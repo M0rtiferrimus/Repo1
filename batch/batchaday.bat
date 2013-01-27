@@ -1,4 +1,6 @@
 @echo off
+::This script currently has a glitch with the SET command. If you want to try to fix it, go ahead. I'll be
+::working on it myself, and it is in a stage of incompletion as of now.
 Title A Batch A Day
 color
 echo This project will be called "A Batch A Day" and will involve me writing
@@ -11,7 +13,7 @@ echo so I'll start with this program.
 echo.
 echo Nah, actually, I'll write a simple "Hello World" program. It's not too much
 echo effort.
-echo                   -M0rtiferrimus
+echo                                                  -M0rtiferrimus
 pause
 :menu
 echo Type a number "x" for a day's program.

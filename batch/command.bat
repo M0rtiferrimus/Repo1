@@ -1,6 +1,7 @@
 @echo off
+::Works perfectly, except for the problem described. I see no fix for this.
 echo This is a command line application.
-echo Very simple.
+echo Very simple, and similar to cmd.exe.
 echo The only difference is that the SET command
 echo (and ECHO too, apparently) seems to hate the
 echo "greater than" sign, so I use a "-" sign instead.

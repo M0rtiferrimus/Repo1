@@ -1,4 +1,7 @@
 @echo off
+::Part of an Instructables tutorial on batch programming, this script allows you to
+::create local accounts as a proof-of-concept. It does not do anything past the Welcome
+::message.
 title Instructables Program
 color 1f
 :start

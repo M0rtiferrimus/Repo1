@@ -1,4 +1,9 @@
 @echo off
+::Now, this is my first full-on batch script. It uses my own (I did not say "unique") ideas for attempting to gain
+::access to restricted areas of, say, school computers. On any normal PC, you will not get
+::past step 2, since it exits the script and goes into cmd.exe whenever it is not blocked.
+::Maybe a better implementation of step 2 would be to have cmd.exe attempt to open in a new
+::window.
 echo Starting batch...
 echo Trying to get root access, hold on...
 :root
@@ -56,7 +61,7 @@ if '%userin4%'=='N' goto exit
 echo Invalid input.
 goto step5
 :cmdmode
-set /p userin5=
+set /p userin5=%CD%-
 %userin5%
 goto cmdmode
 :exit
