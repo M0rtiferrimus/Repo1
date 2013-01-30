@@ -22,13 +22,17 @@ echo Type "exit" to exit.
 set /p menuop=
 if '%menuop%'=='exit' exit
 if '%menuop%'=='contents' goto contents
-if ('%menuop%' LSS '1' echo That's not a valid number.
+if %menuop% LSS 1 (
+echo That's not a valid number.
 pause
-goto menu )
-if ('%menuop%' GTR '30' echo I said thirty days. If you want to write more than thirty programs,
+goto menu 
+)
+if %menuop% GTR 30 (
+echo I said thirty days. If you want to write more than thirty programs,
 echo then edit this program yourself.
 pause
-goto menu )
+goto menu 
+)
 goto %menuop%
 :1
 cls
@@ -67,11 +71,11 @@ pause
 goto menu
 :8
 cls
-%UserProfile%\batch\flashcards.bat
+%UserProfile%\batch\fakehack.bat
 pause
 goto menu
 :9
 cls
-%UserProfile%\batch\textgame.bat
+%UserProfile%\batch\rng.bat
 pause
 goto menu
